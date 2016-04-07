@@ -56,6 +56,21 @@
         @extend .ui-arrow-r;
     }
 
+    //带右三角图标
+    .ui-list-dropdown {
+        >li:after{
+            @extend .ui-triangle-down
+        }
+        >li.active:after{
+            border-top: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-bottom: 8px solid #217de4;
+            margin-bottom: 0;
+            color: #217de4 !important;
+        }
+    }
+
     //上下结构 业务关联较多
     .ui-list-flex >li {
         .flex {

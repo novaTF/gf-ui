@@ -3,14 +3,10 @@
 
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
-var sprite = require('css-sprite-mobile').stream;
 var sourcemaps = require('gulp-sourcemaps');
 var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
-var ftp = require('vinyl-ftp');
 var md5 = require("gulp-gf-md5");
-var zip = require('gulp-zip');
-var babel = require("gulp-babel");
 
 var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
@@ -56,20 +52,20 @@ gulp.task('injector:css:preprocessor', function () {
 });
 
 // generate sprite.png and _sprite.scss
-gulp.task('sprites', function () {
-    return gulp.src('src/assets/sprites/*.png')
-        .pipe(sprite({
-            name: 'sprite',
-            style: 'sprite.scss',
-            retina: true,
-            margin: 2,
-            orientation: 'binary-tree',
-            // prefix: 'icon', 默认是icon
-            cssPath: '../assets/images/',
-            processor: 'scss'
-        }))
-        .pipe(gulpif('*.png', gulp.dest('src/assets/images/'), gulp.dest('src/components/')))
-});
+// gulp.task('sprites', function () {
+//     return gulp.src('src/assets/sprites/*.png')
+//         .pipe(sprite({
+//             name: 'sprite',
+//             style: 'sprite.scss',
+//             retina: true,
+//             margin: 2,
+//             orientation: 'binary-tree',
+//             // prefix: 'icon', 默认是icon
+//             cssPath: '../assets/images/',
+//             processor: 'scss'
+//         }))
+//         .pipe(gulpif('*.png', gulp.dest('src/assets/images/'), gulp.dest('src/components/')))
+// });
 
 //图片md5和压缩
 gulp.task('images', function () {
