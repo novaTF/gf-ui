@@ -1,0 +1,6 @@
+:host .tab-content {
+  padding: .15rem;
+  background: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  line-height: .25rem; }
