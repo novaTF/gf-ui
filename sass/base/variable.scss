@@ -42,7 +42,7 @@ $wrap-margin:      15px;
 $wrap-margin-s:    10px;
 //-----------Paddings-----------------//
 $wrap-padding:      .15rem;
-$wrap-padding-s:    .07rem;
+$wrap-padding-s:    .1rem;
 //-----------Z-indexes----------------//
 $z-index-mask:        1;
 $z-index-banner-bar:  9;
@@ -72,6 +72,8 @@ $borderDirection: top !default;
 $gred: #dd5839;
 $gblue2: #004a89;
 $fBlue: #0061b3;
+$blue2:#239dd4;
+
 $green: #72973c;
 $red: #e55454;
 $red2: #cf2a2a; //tag数字角标
@@ -107,10 +109,10 @@ $fs9: .11rem;
     color: $grey9;
 }
 /*反字标题  适用范围太窄，考虑删除*/
-//.gf-font-reverse-title{
-//    font-size:$fs2; //18px
-//    color: #fff;
-//}
+.gf-font-reverse-title{
+    font-size:$fs2; //18px
+    color: #fff;
+}
 
 /*TAB标题*/
 .gf-font-tab-title{
