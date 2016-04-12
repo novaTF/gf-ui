@@ -1,0 +1,46 @@
+@import "../../../assets/sprite";
+:host {
+  > ul {
+    position: absolute;
+    li.active{
+      color: #217de4 !important;
+      &:after{
+        @extend .icon-global;
+        content: '';
+        @include sprite($check-hook);
+        display: inline-block;
+        position: absolute;
+        right: .15rem;
+      }
+    }
+  }
+  .ui-list-horizon {
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: .15rem 0;
+    li {
+      width: 1.03rem;
+      height: .35rem;
+      line-height: .35rem;
+      text-align: center;
+      flex: 0 1 auto;
+      padding: 0;
+      margin-left: .15rem;
+      margin-bottom: .15rem;
+      border: solid 1px #cccccc;
+      border-radius: .05rem;
+      &.active {
+        border-color: #0061b3;
+        &:after {
+          @extend .icon-global;
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: -.04rem;
+          top: -.02rem;
+          @include sprite($check);
+        }
+      }
+    }
+  }
+}

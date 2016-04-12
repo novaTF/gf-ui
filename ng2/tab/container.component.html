@@ -1,0 +1,4 @@
+<ul class="ui-list ui-list-horizon ui-list-center ui-list-border-b no-padding gf-font-tab-title ui-tab-title">
+  <li *ngFor="#tab of tabs" [class.active]="tab.active" (click)="select(tab)"><a>{{tab.title}}</a></li>
+</ul>
+<ng-content></ng-content>

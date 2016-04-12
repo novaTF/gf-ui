@@ -1,0 +1,16 @@
+:host{
+  .ui-tab-title{
+    height: .47rem;
+    box-sizing: border-box;
+    .active{
+      a{
+        display: inline-block;
+        height: .47rem;
+        line-height: .47rem;
+        box-sizing: border-box;
+        color: #217de4;
+        border-bottom: 2px #217de4 solid;
+      }
+    }
+  }
+}

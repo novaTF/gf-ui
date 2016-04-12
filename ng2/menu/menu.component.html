@@ -1,0 +1,3 @@
+<ul class="ui-list ui-list-pure ui-list-border-b ui-list-noBottom" [class.ui-list-horizon]="horizon" [style.display]="active?'':'none'">
+  <li *ngFor="#item of items" [class.active]="selected==item" (click)="select(item)">{{item}}</li>
+</ul>

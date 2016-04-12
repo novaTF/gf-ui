@@ -1,5 +1,6 @@
 'use strict';
 
+
 var gulp = require('gulp');
 var gulpif = require('gulp-if');
 var sourcemaps = require('gulp-sourcemaps');
@@ -7,8 +8,51 @@ var runSequence = require('run-sequence');
 var replace = require('gulp-replace');
 var md5 = require("gulp-gf-md5");
 
+var iconfont = require('gulp-iconfont');
+var iconfontCss = require('gulp-iconfont-css');
+var fontName = 'Icons';
+var sprity = require('sprity');
+
+
 var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*', 'main-bower-files', 'uglify-save-license', 'del']
+});
+
+
+gulp.task('sprites', function () {
+    return sprity.src({
+            src:'src/assets/sprites/**/*.png',
+            name: 'sprite',
+            style: 'sprite.scss',
+            retina: true,
+            margin: 2,
+            orientation: 'binary-tree',
+            // prefix: 'icons', 默认是icon
+            out: 'src/assets/images/sprite',
+            cssPath: '../assets/images/',
+            processor: 'sass',
+            split:true,
+            dimension: [{
+                ratio: 1, dpi: 72
+            }, {
+                ratio: 2, dpi: 190
+            }]
+        })
+        .pipe(gulpif('*.png', gulp.dest('src/assets/images'), gulp.dest('src/components')))
+});
+
+gulp.task('iconfont', function(){
+    gulp.src(['src/assets/icons/*.svg'])
+        .pipe(iconfontCss({
+            fontName: fontName,
+            //  path: 'src/assets/css/templates/_icons.scss',
+            targetPath: '../../components/icons.scss',
+            fontPath: '../assets/fonts/'
+        }))
+        .pipe(iconfont({
+            fontName: fontName
+        }))
+        .pipe(gulp.dest('src/assets/fonts/'));
 });
 
 gulp.task('styles', ['injector:css:preprocessor'], function () {
@@ -50,22 +94,6 @@ gulp.task('injector:css:preprocessor', function () {
         .pipe(gulp.dest('sass/'));
 });
 
-// generate sprite.png and _sprite.scss
-// gulp.task('sprites', function () {
-//     return gulp.src('src/assets/sprites/*.png')
-//         .pipe(sprite({
-//             name: 'sprite',
-//             style: 'sprite.scss',
-//             retina: true,
-//             margin: 2,
-//             orientation: 'binary-tree',
-//             // prefix: 'icon', 默认是icon
-//             cssPath: '../assets/images/',
-//             processor: 'scss'
-//         }))
-//         .pipe(gulpif('*.png', gulp.dest('src/assets/images/'), gulp.dest('src/components/')))
-// });
-
 //图片md5和压缩
 gulp.task('images', function () {
 
@@ -84,24 +112,11 @@ gulp.task('images', function () {
 
 });
 
-gulp.task('fonts', function () {
-    return gulp.src($.mainBowerFiles())
-        .pipe($.filter('**/*.{eot,svg,ttf,woff}'))
-        .pipe($.flatten())
-        .pipe(gulp.dest('dist/fonts/'));
-});
-
-gulp.task('misc', function () {
-    return gulp.src('src/**/*.ico')
-        .pipe(gulp.dest('dist/'));
-});
-
 gulp.task('clean', function (done) {
     $.del(['dist/'], done);
 });
 
-
-gulp.task('build1', ['styles']);
+gulp.task('build1', ['sprites','iconfont','styles']);
 
 gulp.task('build', function () {
     runSequence('clean', 'build1');
