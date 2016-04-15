@@ -151,7 +151,9 @@ $uncheck-icon-c: -75px -326px 22px 22px;
 $uncheck-icon-s: -367px -281px 18px 18px;
 $wechat-circle: -264px -1px 50px 50px;
 $weichat-friends: -264px -53px 50px 50px;
-
+$global-icon-del: -389px -292px 14px 13px;
+$global-icon-fav-active: -99px -146px 13px 13px;
+$global-icon-toast-warn: -367px -25px 22px 22px;
 @mixin sprite-width($sprite) {
   width: nth($sprite, 3);
 }
