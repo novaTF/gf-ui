@@ -11,66 +11,58 @@
     @include ui-border-t($bGrey1);
     border-top: 1px #d2d2d2 solid;
     z-index: $z-index-icon-top;
-    .icon-global {
-        margin: 0 auto 3px;
-    }
-    .iconfont {
+    .icon {
         margin: 0 auto 3px;
     }
     .ui-flex-tabs-item {
         flex: 1;
         text-align: center;
-        font-size: .12rem;
-        transform: scale(0.8);
+        padding:7px 0;
+        font-size: 11px;
     }
 
     .icon-home {
-        @include sprite($icon-home);
+        @include sprite($global-icon-home);
     }
 
     .icon-news {
-        @include sprite($icon-news);
+        @include sprite($global-icon-news);
     }
 
     .icon-groups {
-        @include sprite($icon-groups);
+        @include sprite($global-icon-groups);
     }
 
     .icon-shops {
-        @include sprite($icon-shops);
+        @include sprite($global-icon-shops);
     }
 
     .home-active {
         color: #0061b3;
         i {
-            @include sprite($icon-home-active);
+            @include sprite($global-icon-home-active);
         }
     }
     .news-active {
         color: #0061b3;
         i {
-            @include sprite($icon-news-active);
+            @include sprite($global-icon-news-active);
         }
     }
     .groups-active {
         color: #0061b3;
         i {
-            @include sprite($icon-groups-active);
+            @include sprite($global-icon-groups-active);
         }
     }
     .shops-active {
         color: #0061b3;
         i {
-            @include sprite($icon-shops-active);
+            @include sprite($global-icon-shops-active);
         }
     }
-
-    .active {
-        color: #0061b3;
-    }
-
     .icon-size{
-        display: block;
-        font-size: .3rem;
+        width:23px! important;
+        height:23px! important;
     }
 }
