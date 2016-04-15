@@ -22,43 +22,43 @@
     }
 
     .icon-home {
-        @include sprite($icon-home);
+        @include sprite($global-icon-home);
     }
 
     .icon-news {
-        @include sprite($icon-news);
+        @include sprite($global-icon-news);
     }
 
     .icon-groups {
-        @include sprite($icon-groups);
+        @include sprite($global-icon-groups);
     }
 
     .icon-shops {
-        @include sprite($icon-shops);
+        @include sprite($global-icon-shops);
     }
 
     .home-active {
         color: #0061b3;
         i {
-            @include sprite($icon-home-active);
+            @include sprite($global-icon-home-active);
         }
     }
     .news-active {
         color: #0061b3;
         i {
-            @include sprite($icon-news-active);
+            @include sprite($global-icon-news-active);
         }
     }
     .groups-active {
         color: #0061b3;
         i {
-            @include sprite($icon-groups-active);
+            @include sprite($global-icon-groups-active);
         }
     }
     .shops-active {
         color: #0061b3;
         i {
-            @include sprite($icon-shops-active);
+            @include sprite($global-icon-shops-active);
         }
     }
     .icon-size{
