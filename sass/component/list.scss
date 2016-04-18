@@ -46,15 +46,16 @@
     }
 }
 .ui-list-tab{
-    height: 45px;
-    line-height: 24px;
-    > li{
+    height: .45rem;
+    line-height: .43rem;
+    >li{
+        -webkit-box-pack:center;
         box-sizing: border-box;
-
+        text-align: center;
         >a {
+            @extend .gf-font-tab-title;
             display: inline-block;
             padding: 0 5px;
-            //height: .45rem;
         }
     }
 
