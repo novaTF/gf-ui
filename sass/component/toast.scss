@@ -19,12 +19,6 @@
     //background-color: #000;
     //opacity: 0.8;
     background-color:rgba(0,0,0,.9);
-    i{
-        @include sprite($global-icon-toast-warn);
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px;
-    }
 }
 .gf-alert-content{
     padding: 25px;

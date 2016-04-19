@@ -59,7 +59,7 @@
 }
 
 /*-----------------标签--------------------*/
-@mixin gf-tag( $background-color: $red , $border-radius: 2px, $padding-tb: 1px, $padding-lr: 1px, $font-size: $fs8){
+@mixin gf-tag( $background-color: $red , $border-radius: 2px, $padding-tb: 1px, $padding-lr: 2px, $font-size: $fs8){
     color: #fff;
     //vertical-align: 1px;
     display: inline-block;
