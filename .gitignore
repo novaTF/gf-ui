@@ -4,5 +4,7 @@ src/app/.idea/
 .DS_Store
 .DS_Store?
 .idea/
+*.css
+*.css.map
 /bower_components/
 /node_modules/
