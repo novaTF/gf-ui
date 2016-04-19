@@ -1,0 +1,32 @@
+:host {
+  height: 1.5rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  .islider-outer li, img {
+    position: absolute;
+    height: 1.5rem;
+    width: 100%;
+  }
+
+  .islider-dot-wrap {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    .islider-dot {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 100%;
+      background: #fff;
+      border: 1px #c7c3bf solid;
+      margin-right: 5px;
+      &.active {
+        background: #ef7f42;
+        border-color: #ef7f42
+      }
+    }
+  }
+}

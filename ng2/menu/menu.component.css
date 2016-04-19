@@ -1,21 +1,54 @@
 .icon-global, :host > ul li.active:after, :host .ui-list-horizon li.active:after {
   background-image: url("/assets/images/sprite-global.png"); }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 190dpi) {
+@media (-webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 1.9791666666666667), (min-resolution: 190dpi) {
   .icon-global, :host > ul li.active:after, :host .ui-list-horizon li.active:after {
     background-image: url("/assets/images/sprite-global@2x.png");
-    background-size: 53px 53px; } }
+    -webkit-background-size: 92px 86px;
+            background-size: 92px 86px; } }
+
+.icon-global-arrow-right-b {
+  background-position: -24px -71px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 10px;
+  height: 15px; }
+
+.icon-global-arrow-right {
+  background-position: -14px -71px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 10px;
+  height: 15px; }
 
 .icon-global-back {
-  background-position: -40px 0px;
+  background-position: 0px -51px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
   width: 13px;
   height: 20px; }
 
+.icon-global-book-gray {
+  background-position: -44px -29px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 21px;
+  height: 20px; }
+
+.icon-global-bubble-gray {
+  background-position: -22px -29px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 22px;
+  height: 20px; }
+
 .icon-global-check-hook {
-  background-position: 0px -24px;
+  background-position: -13px -51px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -23,23 +56,55 @@
   height: 14px; }
 
 .icon-global-check {
-  background-position: -23px 0px;
+  background-position: -72px -23px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
   width: 17px;
   height: 17px; }
 
+.icon-global-coins-gray {
+  background-position: -72px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 20px;
+  height: 23px; }
+
 .icon-global-coins {
-  background-position: 0px -38px;
+  background-position: 0px -71px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
   width: 14px;
   height: 15px; }
 
-.icon-global-user {
+.icon-global-refresh-gray {
+  background-position: -51px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 21px;
+  height: 25px; }
+
+.icon-global-stream {
   background-position: 0px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 28px;
+  height: 29px; }
+
+.icon-global-user-gray {
+  background-position: 0px -29px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  width: 22px;
+  height: 22px; }
+
+.icon-global-user {
+  background-position: -28px 0px;
   background-repeat: no-repeat;
   overflow: hidden;
   display: inline-block;
@@ -52,7 +117,7 @@
     color: #217de4 !important; }
     :host > ul li.active:after {
       content: '';
-      background-position: 0px -24px;
+      background-position: -13px -51px;
       background-repeat: no-repeat;
       overflow: hidden;
       display: block;
@@ -63,20 +128,25 @@
       right: .15rem; }
 
 :host .ui-list-horizon {
-  flex-wrap: wrap;
-  box-sizing: border-box;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: .15rem 0; }
   :host .ui-list-horizon li {
     width: 1.03rem;
     height: .35rem;
     line-height: .35rem;
     text-align: center;
-    flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+            flex: 0 1 auto;
     padding: 0;
     margin-left: .15rem;
     margin-bottom: .15rem;
     border: solid 1px #cccccc;
-    border-radius: .05rem; }
+    -webkit-border-radius: .05rem;
+            border-radius: .05rem; }
     :host .ui-list-horizon li.active {
       border-color: #0061b3; }
       :host .ui-list-horizon li.active:after {
@@ -85,9 +155,11 @@
         position: absolute;
         right: -.04rem;
         top: -.02rem;
-        background-position: -23px 0px;
+        background-position: -72px -23px;
         background-repeat: no-repeat;
         overflow: hidden;
         display: block;
         width: 17px;
         height: 17px; }
+
+/*# sourceMappingURL=menu.component.css.map */
