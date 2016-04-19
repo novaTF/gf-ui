@@ -127,7 +127,7 @@
 /*--------------------标签-------------------*/
 .gf-tag {
     @include gf-tag;
-    vertical-align: middle;
+    vertical-align: text-top;
     margin: 0 2px;
 }
 .tag-yin {
