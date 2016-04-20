@@ -140,7 +140,7 @@
 .tag-num{
     @include gf-tag($red2,10px,1px,5px);
 }
-
+//带框白底标签 默认蓝色
 .gf-tag-line{
     @include gf-tag-line;
     margin: 0 2px;

@@ -71,7 +71,7 @@
     font-size: $fs8;
     background-color: $background-color;
 }
-@mixin gf-tag-line( $color: $blue2, $border-radius: 2px, $padding-tb: 1px, $padding-lr: 2px, $font-size: $fs8){
+@mixin gf-tag-line( $color: $blue, $border-radius: 2px, $padding-tb: 1px, $padding-lr: 2px, $font-size: $fs8){
     color: $color;
     display: inline-block;
     border-radius: $border-radius;
