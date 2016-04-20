@@ -1,5 +1,5 @@
 import {Component, ElementRef, Inject, Input} from 'angular2/core';
-import * as iSlider from './islider';
+import * as iSlider from '../../node_modules/islider.js/build/iSlider.min';
 @Component({
   selector: 'slider',
   templateUrl: './slider.component.html',
