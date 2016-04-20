@@ -140,21 +140,11 @@
 .tag-num{
     @include gf-tag($red2,10px,1px,5px);
 }
-//空星
-.icon-star1 {
-    @include sprite($icon-star1);
-}
-.icon-star2 {
-    @include sprite($icon-star2);
-}
-.icon-star1,
-.icon-star2 {
-    display: inline-block;
-    //padding-bottom: 1px;
-    padding-right: 1px;
-    margin-right: 2px;
-    height: 12px;
-    vertical-align: -2px;
+//带框白底标签 默认蓝色
+.gf-tag-line{
+    @include gf-tag-line;
+    margin: 0 2px;
+    vertical-align:text-bottom;
 }
 
 .icon-warn{
