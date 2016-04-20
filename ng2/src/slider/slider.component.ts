@@ -1,5 +1,5 @@
 import {Component, ElementRef, Inject, Input} from 'angular2/core';
-import * as iSlider from '../../node_modules/islider.js/build/iSlider.min';
+let iSlider = require('islider.js');
 @Component({
   selector: 'slider',
   templateUrl: './slider.component.html',
@@ -8,7 +8,7 @@ import * as iSlider from '../../node_modules/islider.js/build/iSlider.min';
 })
 
 export class SliderComponent {
-  slider:iSlider;
+  slider:any;
 
   @Input()
   config:any;
