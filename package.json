@@ -1,14 +1,9 @@
 {
-  "name": "gfui",
-  "version": "0.0.3",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gf-rd/gf-ui.git"
-  },
+  "name": "shop",
+  "version": "0.0.0",
   "dependencies": {
-    "islider.js": "2.1.7"
+    "gulp-if": "^1.2.5"
   },
-  "main": "index.ts",
   "devDependencies": {
     "browser-sync": "^2.5.3",
     "gulp": "~3.8.10",
