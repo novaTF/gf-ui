@@ -1,5 +1,5 @@
 .ui-btn {
-    @include ui-border($blue);
+    //@include ui-border-radius($blue);
     display: inline-block;
     position:  absolute;
     top:50%;
@@ -13,34 +13,21 @@
     border-radius: 2px;
     color: $blue;
     background-color: #fff;
+    border-color: $blue;
     font-size: $fs8;
     text-align: center;
     cursor: pointer;
 
     &:before{
-        @include ui-border($blue);
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        //padding: 1px;
-        pointer-events: none;
-        -webkit-transform: scale(0.5);
-        -webkit-transform-origin: 0 0;
-        border-radius: 4px;
-        content: '';
+        border-color: $blue;
     }
     &.active {
         color: $grey9;
-        &:before {
-            @include ui-border($grey9);
+        border-color: $grey9;
+        &:before{
+            border-color: $grey9;
         }
     }
-    @media screen and (-webkit-min-device-pixel-ratio: 2){
-        border: 0;
-    }
-
 }
 
 

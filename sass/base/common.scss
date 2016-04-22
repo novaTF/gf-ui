@@ -123,6 +123,19 @@
 .ui-border-b{
     @include ui-border-b;
 }
+.ui-border{
+    @include ui-border;
+}
+.ui-border-radius{
+    @include ui-border-radius;
+}
+.ui-border-t,.ui-border-r,.ui-border-l,.ui-border-b,.ui-border-tb{
+    @media screen and (-webkit-min-device-pixel-ratio: 2){
+        border: 0;
+    }
+
+}
+
 
 /*--------------------标签-------------------*/
 .gf-tag {
