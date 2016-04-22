@@ -1,4 +1,4 @@
-import {Component, Input} from 'angular2/core';
+import {Component, Input, Output, EventEmitter} from 'angular2/core';
 import {DropmenuComponent} from  '../dropmenu/dropmenu.component';
 
 @Component({
@@ -29,6 +29,9 @@ export class MenuComponent {
   @Input()
   selected:string;
 
+  @Output()
+  onSelect:EventEmitter<Event> = new EventEmitter();
+
   constructor(private dropmenu:DropmenuComponent) {
     dropmenu.addMenu(this);
   }
@@ -37,5 +40,9 @@ export class MenuComponent {
     this.selected = item;
     //选择后关闭面板
     this.active = false;
+    //触发事件
+    let event:any = new Event('onSelect');
+    event.value = this.selected;
+    this.onSelect.emit(event);
   }
 }
