@@ -107,7 +107,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('clean', function (done) {
-  $.del(['dist/'], done);
+  gulp.src(['dist']).pipe($.clean());
 });
 
 gulp.task('build', ['clean', 'sprites', 'iconfont', 'styles']);

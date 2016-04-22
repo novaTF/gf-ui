@@ -161,7 +161,7 @@
 }
 
 .icon-warn{
-    @include sprite($global-icon-toast-warn);
+    @include sprite($toast-warn);
     display: inline-block;
     vertical-align: top;
     margin-right: 10px;
@@ -228,7 +228,7 @@
 
 /*-----------通用图形-----------*/
 .ui-arrow-r{
-    @include sprite($icon-arr-right);
+    @include sprite($arr-right);
 
     position:absolute;
     right: $wrap-margin;

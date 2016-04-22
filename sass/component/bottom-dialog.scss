@@ -36,7 +36,7 @@
     }
 
     .icon-del{
-        @include sprite($global-icon-del);
+        @include sprite($del);
         display: inline-block;
 
         position: absolute;
@@ -48,7 +48,7 @@
         transform: scale(1.2);
     }
     .icon-favor{
-        @include sprite($global-icon-fav-active);
+        @include sprite($fav-active);
         display: inline-block;
     }
 }
