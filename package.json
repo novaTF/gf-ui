@@ -1,6 +1,6 @@
 {
   "name": "gfui",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "repository": {
     "type": "git",
     "url": "https://github.com/gf-rd/gf-ui.git"
@@ -9,7 +9,7 @@
     "islider.js": "2.1.7"
   },
   "scripts": {
-    "deploy": "gulp ng2:build && gulp ng2:ver && cd lib && npm publish"
+    "deploy": "gulp all && gulp ng2:ver && cd lib && nrm use npm && npm publish"
   },
   "main": "index.js",
   "devDependencies": {

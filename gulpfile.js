@@ -61,7 +61,8 @@ gulp.task('styles', ['injector:css:preprocessor'], function () {
     .pipe(sourcemaps.init())
     .pipe(postcss([require('autoprefixer')]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('lib'));
 });
 
 //主要是gfui.scss里面能够自动导入scss文件
@@ -111,3 +112,5 @@ gulp.task('clean', function (done) {
 });
 
 gulp.task('build', ['clean', 'sprites', 'iconfont', 'styles']);
+
+gulp.task('all', ['ng2:build', 'build']);
