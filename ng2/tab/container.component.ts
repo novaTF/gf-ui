@@ -2,7 +2,6 @@ import {Component} from 'angular2/core';
 import {TabComponent} from './tab.component';
 @Component({
   selector: 'tab-container',
-  moduleId: module.id,
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.css']
 })
@@ -17,7 +16,7 @@ export class TabContainerComponent {
   }
 
   select(tab:TabComponent) {
-    this.tabs.forEach((t)=>t.active = false);
+    this.tabs.forEach((t:TabComponent)=>t.active = false);
     tab.active = true;
   }
 }

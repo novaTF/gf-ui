@@ -8,3 +8,6 @@ src/app/.idea/
 *.css.map
 /bower_components/
 /node_modules/
+lib
+dist
+tmp

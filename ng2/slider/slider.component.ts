@@ -1,14 +1,13 @@
 import {Component, ElementRef, Inject, Input} from 'angular2/core';
-import * as iSlider from './islider';
+import iSlider = require('islider.js/build/iSlider');
 @Component({
   selector: 'slider',
   templateUrl: './slider.component.html',
-  moduleId: module.id,
   styleUrls: ['./slider.component.css']
 })
 
 export class SliderComponent {
-  slider:iSlider;
+  slider:any;
 
   @Input()
   config:any;

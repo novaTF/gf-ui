@@ -1,11 +1,11 @@
-@import "../../../assets/sprite";
+@import "../../sass/sprite";
 :host {
   > ul {
     position: absolute;
     li.active{
       color: #217de4 !important;
       &:after{
-        @extend .icon-global;
+        @extend .icon-gfui;
         content: '';
         @include sprite($check-hook);
         display: inline-block;
@@ -32,7 +32,7 @@
       &.active {
         border-color: #0061b3;
         &:after {
-          @extend .icon-global;
+          @extend .icon-gfui;
           content: '';
           display: inline-block;
           position: absolute;

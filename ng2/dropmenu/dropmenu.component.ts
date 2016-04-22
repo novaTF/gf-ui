@@ -3,7 +3,6 @@ import {MenuComponent} from '../menu/menu.component';
 
 @Component({
   selector: 'gf-dropmenu',
-  moduleId: module.id,
   templateUrl: './dropmenu.component.html',
   styleUrls: ['./dropmenu.component.css']
 })
@@ -19,12 +18,12 @@ export class DropmenuComponent {
       menu.active = false;
       return;
     }
-    this.menus.forEach((m)=>m.active = false);
+    this.menus.forEach((m:MenuComponent)=>m.active = false);
     menu.active = true;
   }
 
   close() {
-    this.menus.forEach((m)=>m.active = false);
+    this.menus.forEach((m:MenuComponent)=>m.active = false);
   }
 
   addMenu(menu:MenuComponent) {
