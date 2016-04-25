@@ -1,9 +1,8 @@
 <masker [style.display]="isOpen?'block':'none'" (click)="close()"></masker>
 <div class="dropmenu-container">
   <ul class="ui-list ui-list-horizon ui-list-center no-padding ui-list-border-b ui-list-dropdown gf-font-module-title">
-    <li *ngFor="#menu of menus" [class.active]="menu.active" (click)="select(menu)">{{menu.title}}
+    <li *ngFor="#menu of menus" [class.active]="menu.active" (click)="select(menu)">{{menu.title.name}}
     </li>
   </ul>
   <ng-content></ng-content>
 </div>
-
