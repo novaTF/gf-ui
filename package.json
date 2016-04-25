@@ -1,11 +1,12 @@
 {
   "name": "gfui",
-  "version": "0.0.12",
+  "version": "0.0.17",
   "repository": {
     "type": "git",
     "url": "https://github.com/gf-rd/gf-ui.git"
   },
   "dependencies": {
+    "del": "2.2.0",
     "islider.js": "2.1.7"
   },
   "scripts": {

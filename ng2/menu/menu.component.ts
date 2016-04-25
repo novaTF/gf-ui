@@ -43,7 +43,7 @@ export class MenuComponent {
         //触发事件
         let event:any = new Event('onSelect');
         event.value = this.selected;
-        event.target = this;
+        event.menu = this;
         this.onSelect.emit(event);
     }
 }

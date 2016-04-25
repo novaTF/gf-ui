@@ -8,6 +8,8 @@ var iconfontCss = require('gulp-iconfont-css');
 var fontName = 'Icons';
 var sprity = require('sprity');
 var postcss = require('gulp-postcss');
+var del = require('del');
+var runSequence = require('run-sequence');
 
 require('require-dir')('./gulp');
 
@@ -62,7 +64,7 @@ gulp.task('styles', ['injector:css:preprocessor'], function () {
     .pipe(postcss([require('autoprefixer')]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('lib'));
+    .pipe(gulp.dest('lib/assets'));
 });
 
 //主要是gfui.scss里面能够自动导入scss文件
@@ -91,8 +93,7 @@ gulp.task('injector:css:preprocessor', function () {
 
 //图片md5和压缩
 gulp.task('images', function () {
-
-  var imgSrc = ['src/assets/**/*.{png,jpg}', '!src/assets/backup/*.{png,jpg}', '!src/assets/sprites/*.{png,jpg}'],
+  var imgSrc = ['assets/**/*.{png,jpg}', '!assets/backup/*.{png,jpg}', '!assets/sprites/*.{png,jpg}'],
     quoteSrc = ['dist/styles/*.css', 'dist/scripts/*.js'],
     imgDst = 'dist/assets';
 
@@ -103,14 +104,22 @@ gulp.task('images', function () {
     //    interlaced: true
     //}))
     .pipe(md5(8, quoteSrc))
-    .pipe(gulp.dest(imgDst));
+    .pipe(gulp.dest(imgDst))
+    .pipe(gulp.dest('lib/assets'));
+});
 
+gulp.task('copy:img', function () {
+    return gulp.src(['assets/**/*','!assets/sprites/**/*']).pipe(gulp.dest('lib/assets'));
 });
 
 gulp.task('clean', function (done) {
-  gulp.src(['dist']).pipe($.clean());
+  return del('dist');
 });
 
-gulp.task('build', ['clean', 'sprites', 'iconfont', 'styles']);
+gulp.task('build', function () {
+    runSequence('clean', 'sprites', 'iconfont', 'styles');
+});
 
-gulp.task('all', ['ng2:build', 'build']);
+gulp.task('all', function () {
+    runSequence('ng2:build', 'build', 'copy:img');
+});

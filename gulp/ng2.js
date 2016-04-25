@@ -3,6 +3,7 @@ var gulp = require('gulp-help')(gulp);
 var autoprefixer = require('autoprefixer');
 var runSequence = require('run-sequence');
 var merge = require('merge2');
+var del = require('del');
 
 var $ = require('gulp-load-plugins')({
     pattern: ['gulp-*']
@@ -21,10 +22,7 @@ var appName = (function (p) {
 })(require('../package.json'));
 
 gulp.task('ng2:clean', 'Cleans the generated js files from lib directory', function () {
-    return gulp.src([
-        'lib',
-        'tmp'
-    ]).pipe($.clean());
+    del(['tmp', 'lib']);
 });
 
 gulp.task('tslint', 'Lints all TypeScript source files', function () {
