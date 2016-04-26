@@ -28,7 +28,7 @@ gulp.task('sprites', function (cb) {
     template: './scss.hbs',
     // prefix: 'icons', 默认是icon
     out: 'src/assets/images/sprite',
-    cssPath: '../assets/images/',
+    cssPath: 'http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/',
     processor: 'sass',
     split: true,
     dimension: [{

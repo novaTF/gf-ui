@@ -1,3 +1,3 @@
-<ul class="ui-list ui-list-pure ui-list-border-b ui-list-noBottom" [class.ui-list-horizon]="horizon" [style.display]="active?'':'none'">
-  <li *ngFor="#item of items" [class.active]="selected==item.value" (click)="select(item)">{{item.name}}</li>
+<ul class="ui-list ui-list-pure ui-list-noBottom ui-list-border-b" [class.ui-list-horizon]="horizon" [style.display]="active?'':'none'">
+  <li *ngFor="#item of items" [class.active]="selected==item.value" (click)="select(item)">{{item.name}}<i class="icon-gfui icon-check"></i></li>
 </ul>
