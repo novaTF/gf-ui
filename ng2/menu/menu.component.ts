@@ -9,10 +9,10 @@ import {DropmenuComponent} from  '../dropmenu/dropmenu.component';
 })
 export class MenuComponent {
     @Input()
-    title:string;
+    title:Object;
 
     @Input()
-    items:Array<string>;
+    items:Array<Object>;
 
     /**
      * 激活状态
@@ -36,14 +36,14 @@ export class MenuComponent {
         dropmenu.addMenu(this);
     }
 
-    select(item:string) {
-        this.selected = item;
+    select(item:Object) {
+        this.selected = item.value;
         //选择后关闭面板
         this.active = false;
         //触发事件
         let event:any = new Event('onSelect');
         event.value = this.selected;
-        event.menu = this;
+        event.field = this.title.value;
         this.onSelect.emit(event);
     }
 }
