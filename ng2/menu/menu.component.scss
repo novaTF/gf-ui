@@ -4,9 +4,8 @@
     position: absolute;
     li.active{
       color: #217de4 !important;
-      &:after{
+      .icon-check{
         @extend .icon-gfui;
-        content: '';
         @include sprite($check-hook);
         display: inline-block;
         position: absolute;
@@ -31,9 +30,8 @@
       border-radius: .05rem;
       &.active {
         border-color: #0061b3;
-        &:after {
+        .icon-check {
           @extend .icon-gfui;
-          content: '';
           display: inline-block;
           position: absolute;
           right: -.04rem;

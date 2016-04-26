@@ -32,7 +32,7 @@ export class SliderComponent {
   constructor(@Inject(ElementRef)
               private elementRef:ElementRef) {
     //add dot plugin
-    this.slider.regPlugin('dot', (opts)=> {
+    iSlider.regPlugin('dot', function (opts) {
       let HANDLE:any = this;
       let data = HANDLE.data;
       let dots = [];

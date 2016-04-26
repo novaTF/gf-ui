@@ -42,12 +42,12 @@ $toast-warn: -22px -0px 22px 22px;
 
 
 .icon-gfui {
-  background-image: url('../assets/images/sprite-gfui.png');
+  background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui.png');
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 190dpi) {
 .icon-gfui {
-  background-image: url('../assets/images/sprite-gfui@2x.png');
+  background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui@2x.png');
   background-size: 69px 53px;
 }
 }
