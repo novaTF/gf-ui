@@ -229,7 +229,7 @@
 /*-----------通用图形-----------*/
 .ui-arrow-r{
     @include sprite($arr-right);
-
+    background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui.png');
     position:absolute;
     right: $wrap-margin;
     top: 50%;
@@ -241,6 +241,10 @@
     @media (max-width: 320px) {
         right: $wrap-margin-s;
     }
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 190dpi) {
+    background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui@2x.png');
+    background-size: 69px 53px;
+  }
 }
 
 /*向下的三角*/
