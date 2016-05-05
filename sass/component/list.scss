@@ -73,64 +73,66 @@
 }
 
 //带右箭头
-.ui-list-link > li:after {
+.ui-list-link > li{
+  .arrow-r:after {
     @extend .ui-arrow-r;
+  }
 }
 
-//带右三角图标
-.ui-list-dropdown {
+  //带右三角图标
+  .ui-list-dropdown {
     > li:after {
-        @extend .ui-triangle-down
+      @extend .ui-triangle-down
     }
     > li.active:after {
-        border-top: 0;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-        border-bottom: 8px solid #217de4;
-        margin-bottom: 0;
-        color: #217de4 !important;
+      border-top: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 8px solid #217de4;
+      margin-bottom: 0;
+      color: #217de4 !important;
     }
-}
+  }
 
-//上下结构 业务关联较多
-.ui-list-flex > li {
+  //上下结构 业务关联较多
+  .ui-list-flex > li {
     .flex {
-        padding-top: $wrap-padding-s;
-        display: flex;
-        > div {
-            flex: 1;
-            color: $grey9;
-        }
-        img {
-            @include ui-img;
-        }
+      padding-top: $wrap-padding-s;
+      display: flex;
+      > div {
+        flex: 1;
+        color: $grey9;
+      }
+      img {
+        @include ui-img;
+      }
     }
-}
+  }
 
-.ui-list-new > li,
-.ui-list-flex > li {
+  .ui-list-new > li,
+  .ui-list-flex > li {
     display: flex;
     flex-direction: column;
     //display: -webkit-box;
     //-webkit-box-orient: vertical;
     .tap-hold {
-        width: 100%;
-        box-sizing: border-box;
-        display: block;
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
     }
     h3 {
-        color: #000;
-        margin-bottom: $wrap-padding-s;
+      color: #000;
+      margin-bottom: $wrap-padding-s;
     }
 
     .no-padding {
-        padding: 0;
+      padding: 0;
     }
     .ui-list-new-info {
-        color: $grey6;
-        padding-top: $wrap-padding-s;
+      color: $grey6;
+      padding-top: $wrap-padding-s;
     }
-}
+  }
 
 
 
