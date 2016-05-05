@@ -62,7 +62,7 @@
         @extend .gf-font-small-content;
     }
     input{
-        @include ui-border;
+        @include gf-border;
         border-radius: 5px;
         margin-top: 15px;
         width: 100%;
@@ -94,7 +94,7 @@
     text-align: center;
     cursor: pointer;
     .second{
-        @include ui-border-r;
+        @include gf-border-r;
         float: left;
         border-bottom-left-radius: 5px;
         color: $grey9;
@@ -111,7 +111,7 @@
         color: $fBlue;
     }
     button{
-        @include ui-border-t;
+        @include gf-border-t;
         &:active,&.active{
             background-color: #cfe6fa;
         }

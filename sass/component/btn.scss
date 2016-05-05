@@ -1,5 +1,5 @@
 .ui-btn {
-    //@include ui-border-radius($blue);
+    //@include gf-border-radius($blue);
     display: inline-block;
     position:  absolute;
     top:50%;
@@ -74,11 +74,11 @@
         background-color: #cfe6fa;
     }
     &:disabled,&.disabled {
-        @include ui-border(#ccc);
+        @include gf-border(#ccc);
         color: #ccc;
         background-color: $bGrey;
         &:before {
-            @include ui-border(#ccc);
+            @include gf-border(#ccc);
         }
     }
     @media screen and (-webkit-min-device-pixel-ratio: 2){

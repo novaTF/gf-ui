@@ -10,7 +10,7 @@
     line-height: .45rem;
     @extend .gf-font-big-content;
     >div, a, p{
-        @include ui-border-t;
+        @include gf-border-t;
     }
     a{
         display: block;

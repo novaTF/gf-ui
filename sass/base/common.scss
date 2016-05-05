@@ -60,7 +60,7 @@
 }
 
 /*宽高*/
-.ui-list-height  >li{
+.gf-list-height  >li{
     height: $common-width-s/2;
 }
 
@@ -108,28 +108,28 @@
 }
 
 //border
-.ui-border-tb{
-    @include ui-border-tb;
+.gf-border-tb{
+    @include gf-border-tb;
 }
-.ui-border-t{
-    @include ui-border-t;
+.gf-border-t{
+    @include gf-border-t;
 }
-.ui-border-r{
-    @include ui-border-r;
+.gf-border-r{
+    @include gf-border-r;
 }
-.ui-border-l{
-    @include ui-border-l;
+.gf-border-l{
+    @include gf-border-l;
 }
-.ui-border-b{
-    @include ui-border-b;
+.gf-border-b{
+    @include gf-border-b;
 }
-.ui-border{
-    @include ui-border;
+.gf-border{
+    @include gf-border;
 }
-.ui-border-radius{
-    @include ui-border-radius;
+.gf-border-radius{
+    @include gf-border-radius;
 }
-.ui-border-t,.ui-border-r,.ui-border-l,.ui-border-b,.ui-border-tb{
+.gf-border-t,.gf-border-r,.gf-border-l,.gf-border-b,.gf-border-tb{
     @media screen and (-webkit-min-device-pixel-ratio: 2){
         border: 0;
     }
@@ -227,7 +227,7 @@
 }
 
 /*-----------通用图形-----------*/
-.ui-arrow-r{
+.gf-arrow-r {
     @include sprite($arr-right);
     background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui.png');
     position:absolute;
@@ -248,7 +248,7 @@
 }
 
 /*向下的三角*/
-.ui-triangle-down{
+.gf-triangle-down{
     content: "";
     width: 0;
     height: 0;

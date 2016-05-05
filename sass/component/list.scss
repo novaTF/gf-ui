@@ -1,4 +1,4 @@
-.ui-list {
+.gf-list {
     background-color: #fff;
     width: 100%;
     &.no-padding li {
@@ -11,35 +11,35 @@
     }
 }
 
-.ui-list-pure > li {
+.gf-list-pure > li {
     display: block;
 }
 
 //附加样式
-.ui-list-border-b > li {
-    @include ui-border-b;
+.gf-list-border-b  > li {
+    @include gf-border-b;
 }
 
-.ui-list-noBottom > li {
+.gf-list-noBottom > li {
     &:nth-last-child(1) {
         border-bottom: 0;
     }
 }
 
 //左右
-.ui-list-lr > li {
-    .ui-list-txt {
+.gf-list-lr > li {
+    .gf-list-txt {
         flex: 2;
     }
-    .ui-list-pic {
+    .gf-list-pic {
         flex: 1;
         img {
-            @include ui-img;
+            @include gf-img;
         }
     }
 }
 
-.ui-list-horizon, .ui-list-tab {
+.gf-list-horizon, .gf-list-tab {
     display: flex;
     > li {
         float: left;
@@ -47,7 +47,7 @@
     }
 }
 
-.ui-list-tab {
+.gf-list-tab {
     height: .45rem;
     line-height: .43rem;
     > li {
@@ -68,21 +68,21 @@
 }
 
 //水平垂直居中
-.ui-list-center > li {
-    @extend .ui-center;
+.gf-list-center > li {
+    @extend .gf-center;
 }
 
 //带右箭头
-.ui-list-link > li{
+.gf-list-link > li{
   .arrow-r:after {
     @extend .ui-arrow-r;
   }
 }
 
   //带右三角图标
-  .ui-list-dropdown {
+  .gf-list-dropdown {
     > li:after {
-      @extend .ui-triangle-down
+      @extend .gf-triangle-down
     }
     > li.active:after {
       border-top: 0;
@@ -95,7 +95,7 @@
   }
 
   //上下结构 业务关联较多
-  .ui-list-flex > li {
+  .gf-list-flex > li {
     .flex {
       padding-top: $wrap-padding-s;
       display: flex;
@@ -104,13 +104,13 @@
         color: $grey9;
       }
       img {
-        @include ui-img;
+        @include gf-img;
       }
     }
   }
 
-  .ui-list-new > li,
-  .ui-list-flex > li {
+  .gf-list-new > li,
+  .gf-list-flex > li {
     display: flex;
     flex-direction: column;
     //display: -webkit-box;
@@ -128,7 +128,7 @@
     .no-padding {
       padding: 0;
     }
-    .ui-list-new-info {
+    .gf-list-new-info {
       color: $grey6;
       padding-top: $wrap-padding-s;
     }
