@@ -19,6 +19,10 @@
     //background-color: #000;
     //opacity: 0.8;
     background-color:rgba(0,0,0,.9);
+  .icon-gfui-toast-succ,.icon-gfui-toast-warn{
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
 }
 .gf-alert-content{
     padding: 25px;
@@ -28,12 +32,13 @@
 }
 
 .gf-toast{
-    margin:0 auto;
+    //margin:0 auto;
     border-radius: 5px;
     max-width: 3.15rem;
     width: 100%;
     box-sizing: border-box;
     background-color: #fff;
+
 }
 .gf-toast-content{
     padding: 25px;
@@ -62,12 +67,24 @@
         @extend .gf-font-small-content;
     }
     input{
-        @include gf-border;
+        border: 1px solid #ddd;
         border-radius: 5px;
         margin-top: 15px;
         width: 100%;
         height: .35rem;
+      &:focus{
+        border-radius: 5px;
+        border-color: $blue;
+      }
+      outline: none;
+
+
     }
+  select{
+    outline: none;
+    //border-radius: 5px;
+    color: $blue;
+  }
     .flex{
         display: flex;
         margin-top: 15px;
@@ -81,6 +98,10 @@
             min-width: 1.05rem;
         }
     }
+  .icon-gfui-toast-succ,.icon-gfui-toast-warn{
+    vertical-align: text-bottom;
+    margin-right: 10px;
+  }
 }
 .gf-toast-btns{
     box-sizing: border-box;
