@@ -1,6 +1,6 @@
 <masker [style.display]="isOpen?'block':'none'" (click)="close()"></masker>
 <div class="dropmenu-container">
-  <ul class="gf-list gf-list-horizon gf-list-center no-padding gf-list-dropdown gf-font-module-title">
+  <ul class="gf-list gf-list-horizon gf-list-center gf-border-b no-padding gf-list-dropdown gf-font-module-title">
     <li *ngFor="#menu of menus" [class.active]="menu.active" (click)="select(menu)">{{menu.title.name}}
     </li>
   </ul>
