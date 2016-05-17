@@ -1,4 +1,4 @@
 <ul class="gf-list gf-list-horizon gf-list-center gf-list-border-b  no-padding gf-font-tab-title ui-tab-title">
-  <li *ngFor="#tab of tabs" [class.active]="tab.active" (click)="select(tab)"><a>{{tab.title}}</a></li>
+  <li *ngFor="let tab of tabs" [class.active]="tab.active" (click)="select(tab)"><a>{{tab.title}}</a></li>
 </ul>
 <ng-content></ng-content>

@@ -112,6 +112,10 @@ gulp.task('copy:img', function () {
     return gulp.src(['assets/**/*','!assets/sprites/**/*']).pipe(gulp.dest('lib/assets'));
 });
 
+gulp.task('copy:sass', function () {
+  return gulp.src(['sass/**/*.scss']).pipe(gulp.dest('lib/assets/sass'));
+});
+
 gulp.task('clean', function (done) {
   return del('dist');
 });
@@ -121,5 +125,5 @@ gulp.task('build', function () {
 });
 
 gulp.task('all', function () {
-    runSequence('ng2:build', 'build', 'copy:img');
+    runSequence('ng2:build', 'build', 'copy:img', 'copy:sass');
 });

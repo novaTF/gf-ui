@@ -1,3 +1,3 @@
 <ul class="gf-list gf-list-pure gf-list-noBottom gf-list-border-b " [class.gf-list-horizon]="horizon" [style.display]="active?'':'none'">
-  <li *ngFor="#item of items" [class.active]="selected==item.value" (click)="select(item)">{{item.name}}<i class="icon-gfui icon-check"></i></li>
+  <li *ngFor="let item of items" [class.active]="selected==item.value" (click)="select(item)">{{item.name}}<i class="icon-gfui icon-check"></i></li>
 </ul>
