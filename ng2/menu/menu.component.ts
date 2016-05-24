@@ -24,9 +24,9 @@ export class MenuComponent {
 
     select(item:Object) {
       this.active = false; //选择后关闭面板
-      if (item.value === this.selected && !this.isToggleMod) return; //如果已选中, 并且未开启toggle模式, 则不做处理
+      if (this.equal(this.selected, item.value) && !this.isToggleMod) return; //如果已选中, 并且未开启toggle模式, 则不做处理
 
-      if (item.value === this.selected && this.isToggleMod) {
+      if (this.equal(this.selected, item.value) && this.isToggleMod) {
         this.selected = undefined;  //如果已经选中, 并且开启toggle模式, 设选中元素为undefined.
       } else {
         this.selected = item.value;
@@ -37,5 +37,20 @@ export class MenuComponent {
       event.value = this.selected;
       event.field = this.title.value;
       this.onSelect.emit(event);
+    }
+
+    // 如果value为object, 则做进一层判断。
+    equal(selectedValue, itemValue) {
+      if (typeof selectedValue !== 'object' || typeof selectedValue !== 'object') {
+        return selectedValue === itemValue;
+      } else if (Object.keys(selectedValue).length !== Object.keys(itemValue).length){
+        return false;
+      } else {
+        let result = true;
+        for (let key in selectedValue) {
+          result = result && (selectedValue[key] === itemValue[key]);
+        }
+        return result;
+      }
     }
 }
