@@ -121,6 +121,7 @@
 }
 @mixin gf-border-radius($border-color:$grey0,$border-radius:4px){
     border: 1px solid $border-color;
+    border-radius: $border-radius;
     @media screen and (-webkit-min-device-pixel-ratio: 2) {
         position: relative;
         border: 0;
