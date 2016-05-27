@@ -39,23 +39,23 @@
     @include gf-arrow-r;
 }*/
 /*--------------padding---------------*/
-.ui-padding {
+.gf-padding {
     padding: $wrap-padding;
 }
-.ui-padding-tb{
+.gf-padding-tb{
     padding: $wrap-padding 0;
 }
-.ui-padding-lr{
+.gf-padding-lr{
     padding: 0 $wrap-padding;
 }
 
-.ui-padding-s {
+.gf-padding-s {
     padding: $wrap-padding-s;
 }
-.ui-padding-s-tb{
+.gf-padding-s-tb{
     padding: $wrap-padding-s 0;
 }
-.ui-padding-s-lr{
+.gf-padding-s-lr{
     padding: 0 $wrap-padding-s;
 }
 
