@@ -59,18 +59,6 @@
     padding: 0 $wrap-padding-s;
 }
 
-/*宽高*/
-.gf-list-height  >li{
-    height: $common-width-s/2;
-}
-
-.ui-common-width-s {
-    width: $common-width-s;
-}
-.ui-common-width {
-    width: $common-width;
-}
-
 //单行省略号
 .single-ellipsis {
     overflow: hidden;
