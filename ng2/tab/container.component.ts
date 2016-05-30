@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {TabComponent} from './tab.component';
 @Component({
   selector: 'tab-container',

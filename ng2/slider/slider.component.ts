@@ -1,4 +1,4 @@
-import {Component, ElementRef, Inject, Input} from 'angular2/core';
+import {Component, ElementRef, Inject, Input} from '@angular/core';
 import iSlider = require('islider.js/build/iSlider');
 @Component({
   selector: 'slider',

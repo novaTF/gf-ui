@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {MenuComponent} from '../menu/menu.component';
 
 @Component({
@@ -30,4 +30,3 @@ export class DropmenuComponent {
     this.menus.push(menu);
   }
 }
-
