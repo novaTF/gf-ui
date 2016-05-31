@@ -87,13 +87,13 @@ declare var System:any;
 // Apply the CLI SystemJS configuration.
 System.config({
   map: {
-    'angular2': 'dist/vendor/@angular',
-    '@angular': 'dist/vendor/@angular',
-    '@angular2-material': 'dist/vendor/@angular2-material',
-    'rxjs': 'dist/vendor/rxjs',
-    'gfui': 'dist/vendor/gfui',
-    'islider.js/build/iSlider': 'dist/vendor/islider.js/build/iSlider.js',
-    'main': 'dist/main.js'
+    'angular2': 'gf-ui/dist/vendor/@angular',
+    '@angular': 'gf-ui/dist/vendor/@angular',
+    '@angular2-material': 'gf-ui/dist/vendor/@angular2-material',
+    'rxjs': 'gf-ui/dist/vendor/rxjs',
+    'gfui': 'gf-ui/dist/vendor/gfui',
+    'islider.js/build/iSlider': 'gf-ui/dist/vendor/islider.js/build/iSlider.js',
+    'main': 'gf-ui/dist/main.js'
   },
   packages: cliSystemConfigPackages
 });
