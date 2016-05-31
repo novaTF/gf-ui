@@ -1,0 +1,11 @@
+<div class="demo-container">
+  <app-header title="基础样式"></app-header>
+  <section class="ui-container">
+    <router-outlet></router-outlet>
+  </section>
+  <footer class="ui-flex-tabs-container gf-border-t">
+    <ul class="gf-list gf-list-tab no-padding">
+      <li class="gf-border-r" *ngFor="let tab of tabs;let last=last" [class.gf-border-r]="!last" [class.active]="tab==selected" (click)="onNavClick(tab)"><a>{{tab.title}}</a></li>
+    </ul>
+  </footer>
+</div>

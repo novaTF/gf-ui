@@ -1,0 +1,80 @@
+{
+  "_args": [
+    [
+      "@angular2-material/tabs",
+      "/Users/yulonh/Documents/workspace/gfui-site"
+    ]
+  ],
+  "_from": "@angular2-material/tabs@latest",
+  "_id": "@angular2-material/tabs@2.0.0-alpha.5",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/tabs",
+  "_nodeVersion": "5.7.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/tabs-2.0.0-alpha.5.tgz_1464223474380_0.5416877421084791"
+  },
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
+  },
+  "_npmVersion": "3.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@angular2-material/tabs",
+    "raw": "@angular2-material/tabs",
+    "rawSpec": "",
+    "scope": "@angular2-material",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.5.tgz",
+  "_shasum": "2c970072111a926c3edafc0e7c5e4a87b7d92b8e",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/tabs",
+  "_where": "/Users/yulonh/Documents/workspace/gfui-site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material Slide Toggle",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "2c970072111a926c3edafc0e7c5e4a87b7d92b8e",
+    "tarball": "https://registry.npmjs.org/@angular2-material/tabs/-/tabs-2.0.0-alpha.5.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "keywords": [
+    "angular",
+    "components",
+    "material",
+    "material design",
+    "tabs"
+  ],
+  "license": "MIT",
+  "main": "./tabs.js",
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "name": "@angular2-material/tabs",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.5"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./tabs.d.ts",
+  "version": "2.0.0-alpha.5"
+}

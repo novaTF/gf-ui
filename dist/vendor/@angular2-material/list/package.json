@@ -1,0 +1,84 @@
+{
+  "_args": [
+    [
+      "@angular2-material/list",
+      "/Users/yulonh/Documents/workspace/gfui-site"
+    ]
+  ],
+  "_cnpm_publish_time": 1462344279217,
+  "_from": "@angular2-material/list@latest",
+  "_id": "@angular2-material/list@2.0.0-alpha.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/list",
+  "_nodeVersion": "5.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/list-2.0.0-alpha.4.tgz_1462344278008_0.06128202169202268"
+  },
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
+  },
+  "_npmVersion": "3.8.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@angular2-material/list",
+    "raw": "@angular2-material/list",
+    "rawSpec": "",
+    "scope": "@angular2-material",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/@angular2-material/list/download/@angular2-material/list-2.0.0-alpha.4.tgz",
+  "_shasum": "4a20718210a062cd2faf65c4f7b304e353d3e516",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/list",
+  "_where": "/Users/yulonh/Documents/workspace/gfui-site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material list",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "4a20718210a062cd2faf65c4f7b304e353d3e516",
+    "size": 9353,
+    "tarball": "http://registry.npm.taobao.org/@angular2-material/list/download/@angular2-material/list-2.0.0-alpha.4.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "keywords": [
+    "angular",
+    "components",
+    "list",
+    "material",
+    "material design"
+  ],
+  "license": "MIT",
+  "main": "./list.js",
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "name": "@angular2-material/list",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular2-material/core": "2.0.0-alpha.4"
+  },
+  "publish_time": 1462344279217,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./list.d.ts",
+  "version": "2.0.0-alpha.4"
+}

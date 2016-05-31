@@ -1,0 +1,11 @@
+<section id="list">
+  <div class="demo-item">
+    <div class="demo-block">
+      <ul class="gf-list gf-list-link ">
+        <li *ngFor="let item of items" class="gf-border-t" (click)="onSelect(item)" [class.disabled]="!item.id">
+          {{item.name}}<div class="arrow-r"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

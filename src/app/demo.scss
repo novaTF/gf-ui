@@ -1,0 +1,143 @@
+@import "node_modules/gfui/assets/sass/base/variable";
+@import "node_modules/gfui/assets/sass/base/mixin";
+@import "node_modules/gfui/assets/sass/sprite";
+@import "node_modules/gfui/assets/sass/base/common";
+
+.gf-list-tab .active {
+  border-bottom: 2px #217de4 solid !important;
+  a {
+    color: #217de4;
+  }
+}
+
+.ui-flex-tabs-container {
+  //@include gf-border-t($bGrey1);
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f6f6f6;
+  color: $grey6;
+  align-items: center;
+  //border-top: 1px #d2d2d2 solid;
+  z-index: $z-index-icon-top;
+}
+
+.demo-container {
+  header {
+    position: fixed;
+    top: 0;
+    z-index: $z-index-banner;
+    width: 100%;
+    height: .5rem;
+    line-height: .5rem;
+    text-align: center;
+    background: #249ED5;
+    color: #fff;
+  }
+
+  .icon-arr-right {
+    //@include  sprite($global-icon-arr-right);
+    position: absolute;
+    left: .1rem;
+    top: 50%;
+    margin-top: -9px;
+    transform: rotate(180deg);
+  }
+
+  .ui-container {
+    margin: .45rem 0;
+  }
+
+  .active {
+    //color: #249ED5;
+  }
+
+  .part {
+    padding: 10px;
+    background-color: #fff;
+    .part-title {
+      @include gf-border-t;
+      color: $grey3;
+      padding: 15px 0;
+      font-size: .18rem;
+    }
+    .part-dom {
+      @include gf-border;
+      position: relative;
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 30px 20px 20px;
+      ul {
+        @include gf-border-t;
+      }
+      li {
+        min-height: 50px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+      }
+      button {
+        margin-bottom: 5px;
+      }
+    }
+    .part-dom-alert, .part-dom-toast, .part-dom-dialog {
+      padding: 30px 0;
+    }
+    .part-dom-toast {
+      height: 300px;
+      background-color: rgba(0, 0, 0, .6);
+    }
+    .part-dom-dialog {
+      position: relative;
+      height: 250px;
+      border: 1px solid #ccc;
+    }
+
+    .part-code {
+      code {
+        margin-top: -10px;
+        border: 1px solid #ddd;
+        padding: 20px 10px 10px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #004444;
+        background-color: transparent;
+        white-space: pre;
+      }
+      .code-style {
+        display: block;
+      }
+      .tag-title {
+        color: #22746b;
+      }
+      .tag-attri {
+        color: #5fa0ef;
+      }
+      .tag-value {
+        color: #19AAD8;
+      }
+    }
+    .part-tags {
+      display: block;
+      position: relative;
+    }
+    .example-tags {
+      position: absolute;
+      width: 75px;
+      height: 25px;
+      font-size: .13rem;
+      color: $grey6;
+      text-align: center;
+      line-height: 25px;
+      z-index: 1;
+    }
+
+  }
+
+  .disabled {
+    color: grey;
+  }
+}

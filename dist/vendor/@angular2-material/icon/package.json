@@ -1,0 +1,85 @@
+{
+  "_args": [
+    [
+      "@angular2-material/icon",
+      "/Users/yulonh/Documents/workspace/gfui-site"
+    ]
+  ],
+  "_cnpm_publish_time": 1462344269756,
+  "_from": "@angular2-material/icon@latest",
+  "_id": "@angular2-material/icon@2.0.0-alpha.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@angular2-material/icon",
+  "_nodeVersion": "5.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/icon-2.0.0-alpha.4.tgz_1462344268493_0.7931252231355757"
+  },
+  "_npmUser": {
+    "email": "angular-core+npm@google.com",
+    "name": "angular2-material"
+  },
+  "_npmVersion": "3.8.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@angular2-material/icon",
+    "raw": "@angular2-material/icon",
+    "rawSpec": "",
+    "scope": "@angular2-material",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/@angular2-material/icon/download/@angular2-material/icon-2.0.0-alpha.4.tgz",
+  "_shasum": "83c9071ae5ba57f78261a25b45e99f66c07db36f",
+  "_shrinkwrap": null,
+  "_spec": "@angular2-material/icon",
+  "_where": "/Users/yulonh/Documents/workspace/gfui-site",
+  "bugs": {
+    "url": "https://github.com/angular/material2/issues"
+  },
+  "dependencies": {},
+  "description": "Angular 2 Material icon",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "noattachment": false,
+    "shasum": "83c9071ae5ba57f78261a25b45e99f66c07db36f",
+    "size": 30993,
+    "tarball": "http://registry.npm.taobao.org/@angular2-material/icon/download/@angular2-material/icon-2.0.0-alpha.4.tgz"
+  },
+  "homepage": "https://github.com/angular/material2#readme",
+  "keywords": [
+    "angular",
+    "components",
+    "icon",
+    "material",
+    "material design"
+  ],
+  "license": "MIT",
+  "main": "./icon.js",
+  "maintainers": [
+    {
+      "name": "angular2-material",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "name": "@angular2-material/icon",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@angular/http": "2.0.0-rc.0",
+    "@angular2-material/core": "2.0.0-alpha.4"
+  },
+  "publish_time": 1462344269756,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/material2.git"
+  },
+  "scripts": {},
+  "typings": "./icon.d.ts",
+  "version": "2.0.0-alpha.4"
+}
