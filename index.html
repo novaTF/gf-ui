@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>GfuiSite</title>
-  <base href="gf-ui/dist">
+  <base href="/gf-ui/dist">
 
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="vendor/gfui/assets/gfui.css">
@@ -26,13 +26,13 @@
 <body>
   <app>Loading...</app>
 
-  <script src="dist/vendor/es6-shim/es6-shim.js"></script>
-  <script src="dist/vendor/reflect-metadata/Reflect.js"></script>
-  <script src="dist/vendor/systemjs/dist/system.src.js"></script>
-  <script src="dist/vendor/zone.js/dist/zone.js"></script>
+  <script src="vendor/es6-shim/es6-shim.js"></script>
+  <script src="vendor/reflect-metadata/Reflect.js"></script>
+  <script src="vendor/systemjs/dist/system.src.js"></script>
+  <script src="vendor/zone.js/dist/zone.js"></script>
 
   <script>
-    System.import('dist/system-config.js').then(function () {
+    System.import('system-config.js').then(function () {
       System.import('main');
     }).catch(console.error.bind(console));
   </script>
