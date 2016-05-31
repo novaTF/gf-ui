@@ -76,13 +76,13 @@ barrels.forEach(function (barrelName) {
 // Apply the CLI SystemJS configuration.
 System.config({
     map: {
-        'angular2': 'vendor/@angular',
-        '@angular': 'vendor/@angular',
-        '@angular2-material': 'vendor/@angular2-material',
-        'rxjs': 'vendor/rxjs',
-        'gfui': 'vendor/gfui',
-        'islider.js/build/iSlider': 'vendor/islider.js/build/iSlider.js',
-        'main': 'main.js'
+        'angular2': 'dist/vendor/@angular',
+        '@angular': 'dist/vendor/@angular',
+        '@angular2-material': 'dist/vendor/@angular2-material',
+        'rxjs': 'dist/vendor/rxjs',
+        'gfui': 'dist/vendor/gfui',
+        'islider.js/build/iSlider': 'dist/vendor/islider.js/build/iSlider.js',
+        'main': 'dist/main.js'
     },
     packages: cliSystemConfigPackages
 });
