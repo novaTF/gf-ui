@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Routes, Router, ROUTER_DIRECTIVES} from '@angular/router';
+import {Routes, Router, RouteSegment, ROUTER_DIRECTIVES} from '@angular/router';
 import {HomeComponent} from './home';
 
 @Component({
@@ -22,6 +22,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.router.navigate(['/demo']);
+    // this.router.navigate(['/demo'], this.curRouteSegment);
   }
 }

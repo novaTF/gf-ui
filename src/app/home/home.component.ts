@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Routes, Router, ROUTER_DIRECTIVES} from '@angular/router';
+import {Routes, Router, RouteSegment, ROUTER_DIRECTIVES} from '@angular/router';
 import {DemoComponent} from '../demo';
 
 @Component({
@@ -15,10 +15,11 @@ import {DemoComponent} from '../demo';
 export class HomeComponent implements OnInit {
 
 
-  constructor(private router:Router) {
+  constructor(private router:Router, private currSegment:RouteSegment) {
   }
 
   ngOnInit() {
+    this.router.navigate(['./demo'], this.currSegment);
   }
 
 }
