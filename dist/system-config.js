@@ -4,22 +4,7 @@
 /** Map relative paths to URLs. */
 var map = {};
 /** User packages configuration. */
-var packages = {
-    '@angular2-material': 'vendor/@angular2-material'
-};
-var materialPkgs = [
-    'core',
-    'toolbar',
-    'icon',
-    'button',
-    'sidenav',
-    'list',
-    'card',
-    'input',
-];
-materialPkgs.forEach(function (pkg) {
-    packages[("@angular2-material/" + pkg)] = { main: pkg + ".js" };
-});
+var packages = {};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -78,7 +63,6 @@ System.config({
     map: {
         'angular2': 'vendor/@angular',
         '@angular': 'vendor/@angular',
-        '@angular2-material': 'vendor/@angular2-material',
         'rxjs': 'vendor/rxjs',
         'gfui': 'vendor/gfui',
         'islider.js/build/iSlider': 'vendor/islider.js/build/iSlider.js',

@@ -5,25 +5,7 @@
 const map:any = {};
 
 /** User packages configuration. */
-const packages:any = {
-  '@angular2-material': 'vendor/@angular2-material'
-};
-
-const materialPkgs:string[] = [
-  'core',
-  'toolbar',
-  'icon',
-  'button',
-  'sidenav',
-  'list',
-  'card',
-  'input',
-];
-
-materialPkgs.forEach((pkg) => {
-  packages[`@angular2-material/${pkg}`] = {main: `${pkg}.js`};
-});
-
+const packages:any = {};
 ////////////////////////////////////////////////////////////////////////////////////////////////
 /***********************************************************************************************
  * Everything underneath this line is managed by the CLI.
@@ -89,7 +71,6 @@ System.config({
   map: {
     'angular2': 'vendor/@angular',
     '@angular': 'vendor/@angular',
-    '@angular2-material': 'vendor/@angular2-material',
     'rxjs': 'vendor/rxjs',
     'gfui': 'vendor/gfui',
     'islider.js/build/iSlider': 'vendor/islider.js/build/iSlider.js',

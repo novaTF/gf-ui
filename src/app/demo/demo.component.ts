@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Router, ROUTER_DIRECTIVES, Routes, RouteSegment, RouteTree, OnActivate} from '@angular/router';
-import {TabContainerComponent, TabComponent} from 'gfui';
 import {BaseComponent} from './+base';
 import {UiComponent} from './+ui';
 import {WidgetComponent} from './+widget';
@@ -12,7 +11,7 @@ import {Title} from '@angular/platform-browser';
   selector: 'demo',
   templateUrl: 'demo.component.html',
   // styleUrls: ['demo.component.css'],
-  directives: [TabContainerComponent, TabComponent, HeaderComponent, ROUTER_DIRECTIVES],
+  directives: [HeaderComponent, ROUTER_DIRECTIVES],
   providers: [Title]
 })
 @Routes([
@@ -39,7 +38,7 @@ export class DemoComponent implements OnInit, OnActivate {
     this.currSegment = curr;
   }
 
-  constructor(private router:Router, private title: Title) {
+  constructor(private router:Router, private title:Title) {
   }
 
   ngOnInit() {
