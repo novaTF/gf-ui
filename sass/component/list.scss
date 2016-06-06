@@ -74,9 +74,7 @@
 
 //带右箭头
 .gf-list-link > li{
-  .arrow-r:after {
     @extend .gf-arrow-r;
-  }
 }
 
   //带右三角图标

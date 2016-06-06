@@ -215,6 +215,8 @@
 
 /*-----------通用图形-----------*/
 .gf-arrow-r {
+  position: relative;
+  &:before{
     @include sprite($arr-right);
     background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui.png');
     position:absolute;
@@ -226,11 +228,12 @@
     margin-right: -5px;
     content:'';
     @media (max-width: 320px) {
-        right: $wrap-margin-s;
+      right: $wrap-margin-s;
     }
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 190dpi) {
-    background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui@2x.png');
-    background-size: 69px 53px;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 190dpi) {
+      background-image: url('http://cdndev.gf.com.cn/gfwealth/common/gfui/assets/images/sprite-gfui@2x.png');
+      background-size: 69px 53px;
+    }
   }
 }
 
