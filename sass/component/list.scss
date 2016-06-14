@@ -54,6 +54,7 @@
         -webkit-box-pack: center;
         box-sizing: border-box;
         text-align: center;
+        cursor: pointer;
         > a {
             @extend .gf-font-tab-title;
             display: inline-block;
