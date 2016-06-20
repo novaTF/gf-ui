@@ -77,7 +77,11 @@
     /*white-space: nowrap;*/
 }
 
-
+.gf-whitespace{
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
 
 .ui-text-right {
     text-align: right;
